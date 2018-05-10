@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--wp_head()関数をheadタグの直前に追記-->
     <?PHP //wp_head();?>
-    <!-- テンプレートディレクトリのheader-insert.phpを読み込む -->
+    <!-- get_pemplate_part()関数でテンプレートディレクトリのheader-insert.phpを読み込む -->
     <?PHP get_template_part('header','insert') ?>
 </head>
 

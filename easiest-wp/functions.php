@@ -9,11 +9,7 @@ require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/kamo
 //$mlog->debug('hogehoge');
 
 //スタイルシートの読み込み
-function k_load_scripts(){
-    wp_enqueue_style('custom-wp-style',get_stylesheet_uri());
-}
-
-add_action('wp_enqueue_scripts' , 'k_load_scripts');
+//これはheader-insert.phpで行う。
 
 //タイトルタグの設定
 //テーマサポートを追加
