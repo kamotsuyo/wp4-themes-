@@ -22,7 +22,7 @@
         <?php $global_menu_array = array('theme_location'=>'global','menu_id'=>'global-menu','container'=>'nav','container_class'=>'global-nav');?>
         <?php wp_nav_menu($global_menu_array); endif; ?>
     </header>
-    <h1>素のやつ</h1>
+    <h1>test:色々書き換え</h1>
     <section>
         <h2>投稿記事</h2>
         <!--記事一覧表示-->
