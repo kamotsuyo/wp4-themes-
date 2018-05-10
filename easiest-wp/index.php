@@ -2,10 +2,7 @@
 <html <?php language_attributes();?>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--wp_head()関数をheadタグの直前に追記-->
-    <?PHP //wp_head();?>
+    <!-- charset , viewportもheader-insert.php で行う。-->
     <!-- get_pemplate_part()関数でテンプレートディレクトリのheader-insert.phpを読み込む -->
     <?PHP get_template_part('header','insert') ?>
 </head>
