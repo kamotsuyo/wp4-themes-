@@ -14,6 +14,7 @@ require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/kamo
 //タイトルタグの設定
 //テーマサポートを追加
 function easistwp_setup(){
+    //タイトルタグの自動生成　！！wp_head関数が必要
     add_theme_support('title-tag');
 
     //アイキャッチ画像を有効化

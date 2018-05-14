@@ -8,3 +8,5 @@
 <script data-main="<?PHP echo $main_js_uri ?>" src="<?PHP echo $require_js_uri?>"></script>
 <!--スタイルシート-->
 <link rel="stylesheet" id="default-style" href="<?PHP echo(get_stylesheet_uri()); ?>" media="all">
+
+<!--問題は wp_head関数を使わないと titleタグの生成が自動で行われないことだ。 -->
