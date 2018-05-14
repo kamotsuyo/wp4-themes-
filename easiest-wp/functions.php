@@ -2,22 +2,29 @@
 
 //ログ・デバッグ管理用のオリジナル関数
 require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/kamo_mlog/kamo_mlog.php');
-//end
+//console.logへ出力する関数console_log.phpを読み込む
+require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/console_log/console.php');
 
 /** ログ出力test--OK */
 //$mlog = new Mlog(__DIR__);
 //$mlog->debug('hogehoge');
 
-//スタイルシートの読み込み
-function k_load_scripts(){
-    wp_enqueue_style('custom-wp-style',get_stylesheet_uri());
+/** console.log出力テスト== OK */
+$console = new Console();
+$console->log('hoghoehgoe');
+
+//スタイルシートの読み込み用に関数を作成する 関数名は自由。
+function load_stylesheets(){
+    wp_enqueue_style('main-style',get_stylesheet_uri());
+    wp_enqueue_style('sub-style',get_stylesheet_directory_uri().'/sub.css');
 }
 
-add_action('wp_enqueue_scripts' , 'k_load_scripts');
+add_action('wp_enqueue_scripts' , 'load_stylesheets');
 
 //タイトルタグの設定
 //テーマサポートを追加
 function easistwp_setup(){
+    //タイトルタグを自動出力。wp_head関数が必要。
     add_theme_support('title-tag');
 
     //アイキャッチ画像を有効化

@@ -7,6 +7,7 @@
     <!--wp_head()関数をheadタグの直前に追記-->
     <?PHP wp_head();?>
     <!-- テンプレートディレクトリのheader-insert.phpを読み込む -->
+    <!-- javascriptの読み込み用。stylesheetはfuncitons.phpで行っている。 -->
     <?PHP get_template_part('header','insert') ?>
 </head>
 
