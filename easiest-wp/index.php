@@ -73,29 +73,23 @@
 
 
     <nav>
-        <!--ページネーション送り用 配列 -->
-        <!-- 矢印の画像で表示させる -->
-        <?php
-                    $prev_img = '<img class="arrow" src = "' 
-                        . get_theme_file_uri() 
-                        . '/images/arrow-left.png" "srcset="' 
-                        . get_theme_file_uri() 
-                        . '/images/arrow-left@2x.png 2x" alt="前へ">';
-                    $next_img = '<img class="arrow" src = "' 
-                        . get_theme_file_uri() 
-                        . '/images/arrow-right.png" "srcset="' 
-                        . get_theme_file_uri() 
-                        . '/images/arrow-right@2x.png 2x" alt="前へ">';
-
-                    $pagenation_array = array('prev_text'=>$prev_img,'next_text'=>$next_img);
-                    
-
-                    $kamlog->debug(get_the_posts_pagination());
-        
-                    //ページネーション the_posts_pagination()
-                    $pagination = get_the_posts_pagination($pagenation_array);
-                    echo $pagination;
-                    ?>
+        <!--
+        **
+        * get_the_posts_pagination関数を使用して
+        * ページネーションを作成する
+        *
+        -->
+        <!--以下のダブルコート文字列内で変数展開させるために定義しておく-->
+        <?PHP $uri = get_theme_file_uri(); ?>
+        <!-- 矢印の画像で表示させるための画像img -->
+        <?PHP $prev_img = "<img class = \"arrow\" src = \" $uri/images/arrow-left.png \"srcset = \" $uri/images/arrow-left@2x.png 2x\" alt='前へ' >" ?>
+        <?PHP $next_img = "<img class = \"arrow\" src = \" $uri/images/arrow-right.png \"srcset = \" $uri/images/arrow-right@2x.png 2x\" alt='前へ' >" ?>
+        <!-- ページネーション送り用の配列を定義-->
+        <?php $pagenation_array = array('prev_text'=>$prev_img,'next_text'=>$next_img); ?>
+        <!-- 定義した配列を引数にしてget_the_posts_pagination関数を使う-->
+        <?PHP $pagination = get_the_posts_pagination($pagenation_array); ?>
+        <!-- 定義した関数はechoしないと表示されない-->
+        <?PHP echo $pagination; ?>
     </nav>
 
 
