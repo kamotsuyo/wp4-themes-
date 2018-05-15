@@ -14,6 +14,8 @@
 <body <?php body_class()?>>
 
     <header>
+        <!-- サイトタイトルとキャッチフレーズ -->
+        <!-- echo文でurlを出力するときにはesc_url()関数でエスケープを行う-->
         <a href="<?php echo esc_url(home_url());?>">
             <?php bloginfo("name");?>
         </a>
@@ -90,6 +92,7 @@
         <?PHP $pagination = get_the_posts_pagination($pagenation_array); ?>
         <!-- 定義した関数はechoしないと表示されない-->
         <?PHP echo $pagination; ?>
+
     </nav>
 
 

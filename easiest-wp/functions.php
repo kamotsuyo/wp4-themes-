@@ -18,7 +18,6 @@ function load_stylesheets(){
     wp_enqueue_style('main-style',get_stylesheet_uri());
     wp_enqueue_style('sub-style',get_stylesheet_directory_uri().'/sub.css');
 }
-
 add_action('wp_enqueue_scripts' , 'load_stylesheets');
 
 //タイトルタグの設定
@@ -26,7 +25,6 @@ add_action('wp_enqueue_scripts' , 'load_stylesheets');
 function easistwp_setup(){
     //タイトルタグを自動出力。wp_head関数が必要。
     add_theme_support('title-tag');
-
     //アイキャッチ画像を有効化
     add_theme_support('post-thumbnails');
     //テーマ専用の画像サイズの追加
