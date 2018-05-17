@@ -73,7 +73,10 @@
         <p>記事がありません。</p>
         <?php endif;?>
     </section>
-
+    <section>
+        <!--サイドバー-->
+        <?PHP dynamic_sidebar('sidebar'); ?>
+    </section>
 
     <nav>
         <!--
