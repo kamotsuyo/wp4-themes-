@@ -26,7 +26,9 @@
         <?php $global_menu_array = array('theme_location'=>'global','menu_id'=>'global-menu','container'=>'nav','container_class'=>'global-nav');?>
         <?php wp_nav_menu($global_menu_array); endif; ?>
     </header>
-    <h1>wp_enqueue_script</h1>
+    <h1>master</h1>
+    <h2>履歴</h2>
+    <p>wp_enqueue_scriptのテストをmasterにupdate</p>
     <section>
         <h2>投稿記事</h2>
         <!--記事一覧表示-->
