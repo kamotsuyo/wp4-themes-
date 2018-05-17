@@ -28,7 +28,8 @@
     </header>
     <h1>master</h1>
     <h2>履歴</h2>
-    <p>wp_enqueue_scriptのテストをmasterにupdate</p>
+    <p>wp_enqueue_scriptのテストmasterにPull Request</p>
+    <p>Pull RequestをGitHubのウェブサイトでMarge承認した</p>
     <section>
         <h2>投稿記事</h2>
         <!--記事一覧表示-->
