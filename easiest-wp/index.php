@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--wp_head()関数をheadタグの直前に追記-->
-    <?PHP wp_head();?>
     <!-- stylesheet , script 読み込みはfunctions.phpで行う-->
+    <!--wp_head()関数をheadタグの直前に追記-->
+    <!--wp_head関数はHTMLのheadタグ内に必要なスタイルシート、スクリプト、メタなどのhtmlタグを-->
+    <!-- functions.phpなどのファイルやデータベースから取得して挿入します。-->
+    <?PHP wp_head();?>
 </head>
 
 <body <?php body_class()?>>
