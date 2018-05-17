@@ -17,6 +17,11 @@ $console->log('スクリプト読み込みのfork');
 function load_stylesheets(){
     wp_enqueue_style('main-style',get_stylesheet_uri());
     wp_enqueue_style('sub-style',get_stylesheet_directory_uri().'/sub.css');
+    //スクリプト読み込み
+    //require.js
+    wp_enqueue_script('require',get_theme_file_uri().'/js/require.js');
+    //main.js
+    wp_enqueue_script('main',get_theme_file_uri().'/js/main.js');
 }
 add_action('wp_enqueue_scripts' , 'load_stylesheets');
 
