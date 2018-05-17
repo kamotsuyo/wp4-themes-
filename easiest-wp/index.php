@@ -73,4 +73,5 @@
     <!--サイドバー-->
     <?PHP dynamic_sidebar('sidebar'); ?>
 </section>
+<!-- footer.phpを読み込み-->
 <?PHP get_footer(); ?>
