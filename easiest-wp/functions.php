@@ -40,3 +40,11 @@ function easistwp_setup(){
     register_nav_menus(array('global'=>'Global Menu',));
 }
 add_action('after_setup_theme','easistwp_setup');
+
+//サイドバー登録
+function my_widget_init(){
+    register_sidebar(array(
+    'name' => 'Sidebar',
+    'id' => 'sidebar'));
+}
+add_action('widgets_init','my_widget_init');
