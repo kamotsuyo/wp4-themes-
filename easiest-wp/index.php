@@ -5,6 +5,8 @@
     <!-- charset , viewportもheader-insert.php で行う。-->
     <!-- get_pemplate_part()関数でテンプレートディレクトリのheader-insert.phpを読み込む -->
     <?PHP get_template_part('header','insert') ?>
+    <!-- titleタグの自動出力のためにwp_head()を使う-->
+    <?PHP wp_head(); ?>
 </head>
 
 <body <?php body_class()?>>
@@ -23,6 +25,7 @@
         <?php wp_nav_menu($global_menu_array); endif; ?>
     </header>
     <h1>test:色々書き換え</h1>
+    <p>wp_head()関数を使っているのでtitleタグの自動出力できている</p>
     <section>
         <h2>投稿記事</h2>
         <!--記事一覧表示-->
