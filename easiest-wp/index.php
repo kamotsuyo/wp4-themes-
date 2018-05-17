@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--wp_head()関数をheadタグの直前に追記-->
     <?PHP wp_head();?>
-    <!-- テンプレートディレクトリのheader-insert.phpを読み込む -->
-    <!-- javascriptの読み込み用。stylesheetはfuncitons.phpで行っている。 -->
-    <?PHP get_template_part('header','insert') ?>
+    <!-- stylesheet , script 読み込みはfunctions.phpで行う-->
 </head>
 
 <body <?php body_class()?>>
@@ -28,7 +26,9 @@
         <?php $global_menu_array = array('theme_location'=>'global','menu_id'=>'global-menu','container'=>'nav','container_class'=>'global-nav');?>
         <?php wp_nav_menu($global_menu_array); endif; ?>
     </header>
-    <h1>素のやつ</h1>
+    <h1>master</h1>
+    <h2>履歴</h2>
+    <p>wp_enqueue_scriptのテストをmasterにupdate</p>
     <section>
         <h2>投稿記事</h2>
         <!--記事一覧表示-->

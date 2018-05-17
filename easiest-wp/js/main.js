@@ -15,7 +15,7 @@
     };
     require([url_path + 'XHR.js'], function (XHR) {
         var xhr = new XHR(url_path + "../post.php", callback);
-        xhr.get("hoge=hogehoge");
+        xhr.get("req=送ります贈ります");
     });
 
 }());

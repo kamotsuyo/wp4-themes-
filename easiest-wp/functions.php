@@ -11,12 +11,17 @@ require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/cons
 
 /** console.log出力テスト== OK */
 $console = new Console();
-$console->log('hoghoehgoe');
+$console->log('phpからconsole.log出力のテスト');
 
 //スタイルシートの読み込み用に関数を作成する 関数名は自由。
 function load_stylesheets(){
     wp_enqueue_style('main-style',get_stylesheet_uri());
     wp_enqueue_style('sub-style',get_stylesheet_directory_uri().'/sub.css');
+    //スクリプト読み込み
+    //require.js
+    wp_enqueue_script('require',get_theme_file_uri().'/js/require.js');
+    //main.js
+    wp_enqueue_script('main',get_theme_file_uri().'/js/main.js');
 }
 add_action('wp_enqueue_scripts' , 'load_stylesheets');
 
