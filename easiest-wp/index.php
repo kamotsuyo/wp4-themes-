@@ -73,11 +73,5 @@
     <!--サイドバー-->
     <?PHP dynamic_sidebar('sidebar'); ?>
 </section>
-
-
-
-<!--wp_footer()をbodyタグの直前に追記-->
-<?php //wp_footer()?>
-</body>
-
-</html>
+<!-- footer.phpを読み込み-->
+<?PHP get_footer(); ?>
