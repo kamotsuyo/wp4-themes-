@@ -69,9 +69,8 @@
     <?PHP echo $pagination; ?>
 
 </nav>
-<section>
-    <!--サイドバー-->
-    <?PHP dynamic_sidebar('sidebar'); ?>
-</section>
+<!-- sidebar.phpを読み込み-->
+<?PHP get_sidebar(); ?>
+
 <!-- footer.phpを読み込み-->
 <?PHP get_footer(); ?>
