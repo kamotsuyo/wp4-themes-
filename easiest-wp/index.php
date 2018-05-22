@@ -2,7 +2,7 @@
 <?PHP get_header(); ?>
 
 <h1>wp4.themes</h1>
-<h2>master</h2>
+<h2>fork comments.phpを作る</h2>
 <section>
     <h2>投稿記事</h2>
     <!--記事一覧表示-->

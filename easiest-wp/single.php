@@ -26,11 +26,21 @@
     </p>
 
 </div>
+<!-- コメント一覧の表示-->
+<!-- 投稿ループの内部に記述-->
+<?PHP if(comments_open()||get_comments_number()):comments_template();endif; ?>
+
 <div id="the_post_navigation">
     <!--前後への投稿のリンク-->
     <?PHP the_post_navigation(array('prev_text'=>'前の記事:%title','next_text'=>'次の記事:%title')); ?>
 </div>
 
+
+
 <?PHP endwhile; ?>
+
+
+
+
 <?PHP get_sidebar(); ?>
 <?PHP get_footer(); ?>
