@@ -10,8 +10,8 @@ require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/cons
 //$mlog->debug('hogehoge');
 
 /** console.log出力テスト== OK */
-$console = new Console();
-$console->log('phpからconsole.log出力のテスト');
+//$console = new Console();
+//$console->log('phpからconsole.log出力のテスト');
 
 //スタイルシートの読み込み用に関数を作成する 関数名は自由。
 function load_stylesheets(){
