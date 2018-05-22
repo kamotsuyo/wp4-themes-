@@ -9,9 +9,17 @@ require_once('/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/cons
 //$mlog = new Mlog(__DIR__);
 //$mlog->debug('hogehoge');
 
-/** console.log出力テスト== OK */
-//$console = new Console();
-//$console->log('phpからconsole.log出力のテスト');
+/**
+* console.log出力テスト== OK
+* --------------------------
+* Console自作クラスは使用不可。
+* このクラスを下記のように使うと
+* 管理コンソールで画像管理に不具合が発生する！
+*
+* $console = new Console();
+* $console->log('phpからconsole.log出力のテスト');
+*/
+
 
 //スタイルシートの読み込み用に関数を作成する 関数名は自由。
 function load_stylesheets(){
